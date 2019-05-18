@@ -25,7 +25,11 @@ int main()
 	int iArrayTD[iSIZE][iSIZE] = { 0 };
 
 	std::cout << "------------- Homework 04. Task 02 -----------------" << std::endl;
-	std::cout << "2D Array with Two diagonals = 0" << std::endl << std::endl;
+<<<<<<< HEAD
+	std::cout << "2D Array with main diagonal = 0" << std::endl << std::endl;
+=======
+	std::cout << "2D Array with main diagonal = 0" << std::endl << std::endl;
+>>>>>>> 6c9084586f9a5a6adb6b46c80edbf0182d102a90
 
 	InitTDArray(iArrayTD, iSIZE);
 
