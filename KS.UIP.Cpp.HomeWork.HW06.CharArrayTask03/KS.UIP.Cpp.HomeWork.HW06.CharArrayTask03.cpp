@@ -13,17 +13,16 @@ int main()
 {
 	std::cout << "HW 06. Task 03. How many words in sentence?" << std::endl;
 
-	char sSentence[100];
+	char sSentence[] = "Who is on duty today?";
 	int LengthSentence(0);
 
-	std::cout << "Enter sentence:\t";
-	std::cin >> sSentence;
-	std::cout << std::endl << std::endl;
+	std::cout << "Initial sentemce:" << std::endl << std::endl;
+	std::cout << sSentence << std::endl << std::endl;
 
 	LengthSentence = strlen(sSentence);
 	int iCount(0);
 	
-	for (int i = 0; i < LengthSentence; ++i)
+	for (int i = 0; i <= LengthSentence; ++i)
 	{
 		
 		if (sSentence[i] == ' ' || sSentence[i] == '\0')
@@ -32,6 +31,7 @@ int main()
 		}
 	}
 	std::cout << "Number of Words:\t" << iCount << std::endl << std::endl;
+	
 	return 0;
 }
 

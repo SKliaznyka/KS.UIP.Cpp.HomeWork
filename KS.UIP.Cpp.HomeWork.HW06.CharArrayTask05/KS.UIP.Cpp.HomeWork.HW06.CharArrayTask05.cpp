@@ -1,4 +1,4 @@
-// KS.UIP.Cpp.HomeWork.HW06.CharArrayTask05.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// KS.UIP.Cpp.HomeWork.HW0.06.CharArrayTask05.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "pch.h"
@@ -6,7 +6,33 @@
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	std::cout << "HW 06. Task 05. Words in reverse sequence" << std::endl;
+
+	char sSentence[] = "people are strange";
+	int LengthSentence(0);
+	
+	LengthSentence = strlen(sSentence);
+	int iIndexSpace(0);
+	for (int i = 0; i < LengthSentence; ++i)
+	{
+		if (sSentence[i] == ' ')
+		{
+			iIndexSpace = i;
+		}
+		//(sSentence[i] == ' ') ? ++iIndexSpace : iIndexSpace;
+	}
+
+	for (int i = LengthSentence - 1; i >= 0; --i)
+	{
+		if (sSentence[i] == ' ')
+		{
+			sSentence[i] = '\0';
+			std::cout << sSentence + i + 1 << std::endl << std::endl;
+		}
+	}
+
+	std::cout << iIndexSpace;
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
