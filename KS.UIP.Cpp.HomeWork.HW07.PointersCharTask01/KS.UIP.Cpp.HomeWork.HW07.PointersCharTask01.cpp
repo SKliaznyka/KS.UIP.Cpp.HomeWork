@@ -14,7 +14,6 @@
 
 int main()
 {
-	//char str[255] = "people are strange, when you are stranger";
 	char str[255];
 	
 	char sLetter[2];
